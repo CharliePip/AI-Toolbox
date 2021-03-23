@@ -192,7 +192,7 @@ if __name__ == "__main__":
             keyframe_id_set.add(frames[i - 1].id)
             
         plt.figure(figsize=(40, 20))
-        plt.locator_params(numticks=100)
+        plt.locator_params(axis='both', nbins=10)
         plt.stem(sm_diff_array)
         plt.savefig(dir + 'plot.png')
     
